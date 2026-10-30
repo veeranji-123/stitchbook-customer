@@ -15,6 +15,11 @@ The tailor service updates a booking by calling `/internal/shop-bookings` on thi
 - `GET /api/bookings/customer`
 - `GET /api/user/measurements`
 - `PUT /api/user/measurements`
+- `GET /api/user/favorites`
+- `POST /api/user/favorites`
+- `DELETE /api/user/favorites/:tailorId`
+- `GET /api/ratings/:tailorId`
+- `POST /api/ratings`
 - `GET /api/measurements`
 - `POST /api/measurements`
 - `PUT /api/measurements/:id`
