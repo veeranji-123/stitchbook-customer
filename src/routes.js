@@ -18,6 +18,16 @@ router.get('/tailors/:id', (req, res) => forward(req, res, req.originalUrl));
 router.post('/bookings', (req, res) => forward(req, res, req.originalUrl));
 router.get('/bookings/customer', (req, res) => forward(req, res, req.originalUrl));
 router.put('/bookings/:id/notes', (req, res) => forward(req, res, req.originalUrl));
+router.get('/user/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.put('/user/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.get('/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.post('/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.get('/measurements/:id', (req, res) => forward(req, res, req.originalUrl));
+router.put('/measurements/:id', (req, res) => forward(req, res, req.originalUrl));
+router.delete('/measurements/:id', (req, res) => forward(req, res, req.originalUrl));
+router.get('/bookings/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.get('/bookings/:id/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.post('/bookings/:id/measurements', (req, res) => forward(req, res, req.originalUrl));
 
 router.get('/internal/shop-bookings/:tailorId', requireInternal, (req, res) => {
   const actorId = encodeURIComponent(req.query.actorId || '');
