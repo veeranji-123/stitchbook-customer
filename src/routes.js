@@ -10,6 +10,7 @@ router.get('/auth/user/:email', (req, res) => forward(req, res, req.originalUrl)
 router.get('/auth/phone/:phone', (req, res) => forward(req, res, req.originalUrl));
 
 router.get('/tailors', (req, res) => forward(req, res, req.originalUrl));
+router.get('/tailors/:id/ironing-services', (req, res) => forward(req, res, req.originalUrl));
 router.get('/tailors/:id', (req, res) => forward(req, res, req.originalUrl));
 
 router.post('/bookings', (req, res) => forward(req, res, req.originalUrl));
