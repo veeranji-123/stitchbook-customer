@@ -27,6 +27,9 @@ The tailor service updates a booking by calling `/internal/shop-bookings` on thi
 - `GET /api/bookings/measurements`
 - `GET /api/bookings/:id/measurements`
 - `POST /api/bookings/:id/measurements`
+- `GET /api/bookings/:id/ironing-items`
+- `POST /api/messages`
+- `GET /api/messages/:bookingId`
 
 ## Run
 

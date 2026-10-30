@@ -34,6 +34,9 @@ router.delete('/measurements/:id', (req, res) => forward(req, res, req.originalU
 router.get('/bookings/measurements', (req, res) => forward(req, res, req.originalUrl));
 router.get('/bookings/:id/measurements', (req, res) => forward(req, res, req.originalUrl));
 router.post('/bookings/:id/measurements', (req, res) => forward(req, res, req.originalUrl));
+router.get('/bookings/:id/ironing-items', (req, res) => forward(req, res, req.originalUrl));
+router.post('/messages', (req, res) => forward(req, res, req.originalUrl));
+router.get('/messages/:bookingId', (req, res) => forward(req, res, req.originalUrl));
 
 router.get('/internal/shop-bookings/:tailorId', requireInternal, (req, res) => {
   const actorId = encodeURIComponent(req.query.actorId || '');
