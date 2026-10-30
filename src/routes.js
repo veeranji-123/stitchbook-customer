@@ -1,6 +1,6 @@
 const express = require('express');
-const { forward } = require('../core');
-const { requireInternal } = require('../middleware/internal');
+const { forward } = require('./core');
+const { requireInternal } = require('./middleware/internal');
 
 const router = express.Router();
 

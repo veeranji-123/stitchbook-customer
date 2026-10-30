@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-const { internalToken } = require('./config');
+const { internalToken } = require('../config');
 
 function requireInternal(req, res, next) {
   const provided = req.headers['x-internal-token'];
